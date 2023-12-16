@@ -19,13 +19,15 @@
 		{
 			"Name": "SMLEditor",
 			"Type": "UncookedOnly",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"ExcludelistPlatforms": [ "Linux" ]
 		}
 	],
 	"Plugins": [
 		{
 			"Name": "SML",
-			"Enabled": true
+			"Enabled": true,
+			"ExcludelistPlatforms": [ "Linux" ]
 		}
 	],
 	"LocalizationTargets": [
@@ -33,5 +35,6 @@
 			"Name": "SMLEditor",
 			"LoadingPolicy": "Always"
 		}
-	]
+	],
+	"SupportedTargetPlatforms": [ "Win64" ]
 }

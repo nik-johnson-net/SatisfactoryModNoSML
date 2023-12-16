@@ -40,15 +40,17 @@ public class FactoryGame : ModuleRules
             "NetCore",
             "GameplayTags",
 			"ModelViewViewModel",
-		});
-        
-		if (Target.Platform == UnrealTargetPlatform.Win64) {
+            "CoreOnline",
+        });
+
+		if (Target.Platform == UnrealTargetPlatform.Win64)
+		{
 			// Plugins that only support Win64
 			PublicDependencyModuleNames.AddRange(new[] {
 				"OnlineSubsystemEOS",
 			});
 		}
-		
+
 		PublicDependencyModuleNames.AddRange(new[] {
 			"AbstractInstance",
 			"InstancedSplinesComponent",

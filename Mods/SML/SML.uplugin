@@ -19,7 +19,8 @@
 		{
 			"Name": "SML",
 			"Type": "Runtime",
-			"LoadingPhase": "PostDefault"
+			"LoadingPhase": "PostDefault",
+			"ExcludelistPlatforms": [ "Linux" ]
 		}
 	],
 	"LocalizationTargets": [
@@ -33,5 +34,6 @@
 			"Name": "EnhancedInput",
 			"Enabled": true
 		}
-	]
+	],
+	"SupportedTargetPlatforms": [ "Win64" ]
 }
